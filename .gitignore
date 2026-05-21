@@ -12,6 +12,13 @@ dist
 dist-ssr
 *.local
 
+# OpenCode AI config
+opencode.json
+
+# Compiled JavaScript artifacts (generated from TypeScript sources)
+src/**/*.js
+*.vue.js
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

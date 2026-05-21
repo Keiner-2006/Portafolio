@@ -7,6 +7,10 @@ export const LOCALES = {
     iso: "de-DE",
     name: "Deutsch",
   },
+  es: {
+    iso: "es-CO",
+    name: "Español",
+  },
 } as const satisfies Record<
   string,
   {

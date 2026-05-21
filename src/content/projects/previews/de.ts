@@ -1,47 +1,33 @@
-import thumbnailCubeWar from "../../../assets/thumbnails/cubewar.webp";
-import thumbnailQuibbo from "../../../assets/thumbnails/quibbo.webp";
-//import thumbnailParticles from "../../../assets/thumbnails/particles.webp";
-import thumbnailPokedex from "../../../assets/thumbnails/pokedex.webp";
-import thumbnailSharkie from "../../../assets/thumbnails/sharkie.webp";
-import thumbnailStreakon from "../../../assets/thumbnails/streakon.webp";
+import mcpsDevCard from "../../../assets/thumbnails/mcps-development-card.png";
+import ferreteriaCard from "../../../assets/thumbnails/ferreteria-card.png";
+import fisiotrackCard from "../../../assets/thumbnails/fisiotrack-card.png";
+import kankuamoCard from "../../../assets/thumbnails/kankuamo-card.png";
 
 import type { ProjectPreview } from "../../types";
 
 export default [
   {
-    title: "StreakOn",
-    slug: "streakon",
-    thumbnail: thumbnailStreakon,
-    description: "App für tägliche Gewohnheiten",
+    title: "App Reserva Kankuamo",
+    slug: "reserva-kankuamo",
+    thumbnail: kankuamoCard,
+    description: "MVVM-Architektur mit Flutter, Offline-First-Strategie und Leistungsoptimierung",
   },
   {
-    title: "CubeWar",
-    slug: "cubewar",
-    thumbnail: thumbnailCubeWar,
-    description: "Multiplayer-Strategiespiel",
+    title: "Baumarkt E-Commerce",
+    slug: "ferreteria",
+    thumbnail: ferreteriaCard,
+    description: "Hexagonale Architektur mit ASP.NET Core, Gemini KI und OWASP-Sicherheit",
   },
   {
-    title: "Quibbo",
-    slug: "quibbo",
-    thumbnail: thumbnailQuibbo,
-    description: "Multiplayer-Gaming-Plattform",
+    title: "FisioTrack – Klinikverwaltung",
+    slug: "fisiotrack",
+    thumbnail: fisiotrackCard,
+    description: "Multi-Tenant-SaaS mit Oracle, React und ASP.NET Core",
   },
   {
-    title: "Sharkie",
-    slug: "sharkie",
-    thumbnail: thumbnailSharkie,
-    description: "2D-Abenteuerspiel",
-  },
-  /**  {
-    title: "WebGL Partikel",
-    slug: "particles",
-    thumbnail: thumbnailParticles,
-    description: "Dynamische 3D Partikel",
-  }, */
-  {
-    title: "Pokédex",
-    slug: "pokedex",
-    thumbnail: thumbnailPokedex,
-    description: "Open-Source Lernprojekt",
+    title: "MCPs Entwicklung",
+    slug: "mcps-development",
+    thumbnail: mcpsDevCard,
+    description: "Model Context Protocol Implementierung mit TypeScript",
   },
 ] as const satisfies ProjectPreview[];

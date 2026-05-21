@@ -1,47 +1,33 @@
-import thumbnailCubeWar from "../../../assets/thumbnails/cubewar.webp";
-import thumbnailQuibbo from "../../../assets/thumbnails/quibbo.webp";
-//import thumbnailParticles from "../../../assets/thumbnails/particles.webp";
-import thumbnailPokedex from "../../../assets/thumbnails/pokedex.webp";
-import thumbnailSharkie from "../../../assets/thumbnails/sharkie.webp";
-import thumbnailStreakon from "../../../assets/thumbnails/streakon.webp";
+import mcpsDevCard from "../../../assets/thumbnails/mcps-development-card.png";
+import ferreteriaCard from "../../../assets/thumbnails/ferreteria-card.png";
+import fisiotrackCard from "../../../assets/thumbnails/fisiotrack-card.png";
+import kankuamoCard from "../../../assets/thumbnails/kankuamo-card.png";
 
 import type { ProjectPreview } from "../../types";
 
 export default [
   {
-    title: "StreakOn",
-    slug: "streakon",
-    thumbnail: thumbnailStreakon,
-    description: "Social habit tracking app",
+    title: "App Reserva Kankuamo",
+    slug: "reserva-kankuamo",
+    thumbnail: kankuamoCard,
+    description: "MVVM architecture with Flutter, offline-first strategy, and performance optimization",
   },
   {
-    title: "CubeWar",
-    slug: "cubewar",
-    thumbnail: thumbnailCubeWar,
-    description: "Multiplayer strategy game",
+    title: "Hardware Store E-commerce",
+    slug: "ferreteria",
+    thumbnail: ferreteriaCard,
+    description: "Hexagonal architecture with ASP.NET Core, Gemini AI, and OWASP security",
   },
   {
-    title: "Quibbo",
-    slug: "quibbo",
-    thumbnail: thumbnailQuibbo,
-    description: "Multiplayer gaming platform",
+    title: "FisioTrack – Clinic Management",
+    slug: "fisiotrack",
+    thumbnail: fisiotrackCard,
+    description: "Multi-tenant SaaS with Oracle, React, and ASP.NET Core",
   },
   {
-    title: "Sharkie",
-    slug: "sharkie",
-    thumbnail: thumbnailSharkie,
-    description: "2D adventure game",
-  },
-  /**  {
-    title: "WebGL Particles",
-    slug: "particles",
-    thumbnail: thumbnailParticles,
-    description: "Dynamic 3D particles",
-  }, */
-  {
-    title: "Pokédex",
-    slug: "pokedex",
-    thumbnail: thumbnailPokedex,
-    description: "Open-source learning project",
+    title: "MCPs Development",
+    slug: "mcps-development",
+    thumbnail: mcpsDevCard,
+    description: "Model Context Protocol implementation with TypeScript",
   },
 ] as const satisfies ProjectPreview[];

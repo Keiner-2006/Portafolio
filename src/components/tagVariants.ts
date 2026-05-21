@@ -1,32 +1,48 @@
 export type TagVariant =
-  | "three"
-  | "websockets"
+  | "dotnet"
+  | "flutter"
+  | "dart"
   | "react"
+  | "angular"
+  | "typescript"
+  | "node"
+  | "oracle"
+  | "postgresql"
   | "redis"
-  | "gray"
+  | "supabase"
+  | "aws"
+  | "ai"
+  | "security"
+  | "restapi"
+  | "mvvm"
+  | "hexagonal"
+  | "saas"
+  | "mcp"
   | "html"
   | "css"
-  | "javascript"
-  | "node"
-  | "next"
-  | "kubernetes"
-  | "postgresql"
-  | "ogl"
-  | "glsl";
+  | "gray";
 
 export const tagLabels = {
-  three: "Three.js",
-  websockets: "WebSockets",
+  dotnet: ".NET",
+  flutter: "Flutter",
+  dart: "Dart",
   react: "React",
+  angular: "Angular",
+  typescript: "TypeScript",
+  node: "Node.js",
+  oracle: "Oracle",
+  postgresql: "PostgreSQL",
   redis: "Redis",
-  gray: "Gray",
+  supabase: "Supabase",
+  aws: "AWS S3",
+  ai: "AI",
+  security: "Security",
+  restapi: "REST API",
+  mvvm: "MVVM",
+  hexagonal: "Hexagonal",
+  saas: "SaaS",
+  mcp: "MCP",
   html: "HTML",
   css: "CSS",
-  javascript: "JavaScript",
-  node: "Node.js",
-  next: "Next.js",
-  kubernetes: "Kubernetes",
-  postgresql: "PostgreSQL",
-  ogl: "OGL.js",
-  glsl: "GLSL",
+  gray: "Gray",
 } as const satisfies Record<TagVariant, string>;

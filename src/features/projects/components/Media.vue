@@ -157,21 +157,24 @@ onMounted(async () => {
   &-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   &-video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   &-content {
     overflow: hidden;
     border-radius: var(--radius-lg);
-    background-color: var(--color-background-300);
+    background-color: var(--color-background-400);
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>

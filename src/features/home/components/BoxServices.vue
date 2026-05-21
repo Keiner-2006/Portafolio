@@ -107,23 +107,36 @@ const handleTimelineCreated = (timeline: gsap.core.Timeline, delay: number) => {
 };
 
 const SERVICES_EN = [
-  { name: "Three.js & WebGL" },
-  { name: "Node.js & WebSockets" },
-  { name: "React & Vue" },
-  { name: "Kubernetes & Redis" },
-  { name: "Real-time Multiplayer" },
+  { name: ".NET 9 & ASP.NET Core" },
+  { name: "Flutter & Dart" },
+  { name: "React & Angular" },
+  { name: "Hexagonal & DDD Architecture" },
+  { name: "AWS S3 & Supabase" },
+  { name: "RESTful APIs & Security" },
 ] as const satisfies { name: string }[];
 
 const SERVICES_DE = [
-  { name: "Three.js & WebGL" },
-  { name: "Node.js & WebSockets" },
-  { name: "React & Vue" },
-  { name: "Kubernetes & Redis" },
-  { name: "Echtzeit-Mehrspieler" },
+  { name: ".NET 9 & ASP.NET Core" },
+  { name: "Flutter & Dart" },
+  { name: "React & Angular" },
+  { name: "Hexagonale & DDD-Architektur" },
+  { name: "AWS S3 & Supabase" },
+  { name: "RESTful-APIs & Sicherheit" },
+] as const satisfies { name: string }[];
+
+const SERVICES_ES = [
+  { name: ".NET 9 & ASP.NET Core" },
+  { name: "Flutter & Dart" },
+  { name: "React & Angular" },
+  { name: "Arquitectura Hexagonal & DDD" },
+  { name: "AWS S3 & Supabase" },
+  { name: "APIs RESTful & Seguridad" },
 ] as const satisfies { name: string }[];
 
 const services = computed(() => {
-  return locale.value === "en" ? SERVICES_EN : SERVICES_DE;
+  if (locale.value === "de") return SERVICES_DE;
+  if (locale.value === "es") return SERVICES_ES;
+  return SERVICES_EN;
 });
 </script>
 

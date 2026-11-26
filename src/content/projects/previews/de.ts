@@ -1,3 +1,6 @@
+import barberStudioCard from "../../../assets/thumbnails/barber-studio-card.webp";
+import instrumentaCard from "../../../assets/thumbnails/instrumenta-card.webp";
+import smartpickCard from "../../../assets/thumbnails/smartpick-card.webp";
 import mcpsDevCard from "../../../assets/thumbnails/mcps-development-card.png";
 import ferreteriaCard from "../../../assets/thumbnails/ferreteria-card.png";
 import fisiotrackCard from "../../../assets/thumbnails/fisiotrack-card.png";
@@ -6,6 +9,24 @@ import kankuamoCard from "../../../assets/thumbnails/kankuamo-card.png";
 import type { ProjectPreview } from "../../types";
 
 export default [
+  {
+    title: "Navaja Studio OS",
+    slug: "barber-studio",
+    thumbnail: barberStudioCard,
+    description: "Multi-Tenant-Barber-SaaS mit Terminplanung, Kasse, Inventar, Berichten und rollenbasierter Sicherheit",
+  },
+  {
+    title: "Instrumenta – Chirurgischer Simulator",
+    slug: "instrumenta",
+    thumbnail: instrumentaCard,
+    description: "Interaktive Simulation mit React, PixiJS, XState und Blender-Szenen",
+  },
+  {
+    title: "SmartPick",
+    slug: "smartpick",
+    thumbnail: smartpickCard,
+    description: "Intelligenter Preisaggregator mit Flutter, Scraping, PostgreSQL, Redis und KI",
+  },
   {
     title: "App Reserva Kankuamo",
     slug: "reserva-kankuamo",
@@ -22,7 +43,7 @@ export default [
     title: "FisioTrack – Klinikverwaltung",
     slug: "fisiotrack",
     thumbnail: fisiotrackCard,
-    description: "Multi-Tenant-SaaS mit Oracle, React und ASP.NET Core",
+    description: "Full-Stack-Klinikverwaltung mit .NET, React, Rollen und Echtzeit-Prozessen",
   },
   {
     title: "MCPs Entwicklung",

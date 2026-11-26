@@ -4,26 +4,22 @@ import fisiotrack2 from "../../../assets/images/projects/fisiotrack/fisiotrack-2
 import type { ProjectContent } from "../../types";
 
 export default {
-  title: "FisioTrack – Clinic Management",
+  title: "PhysioCare – Clinic Management",
   theme: "dark",
-  tags: ["dotnet", "react", "oracle", "saas", "restapi", "security"],
+  tags: ["dotnet", "react", "postgresql", "restapi", "security"],
   description:
-    "A multi-tenant SaaS platform for physiotherapy clinic management, designed to streamline patient records, appointments, billing, and clinical reporting.<br/><br/>Features Oracle database performance optimization, a RESTful API with comprehensive Swagger documentation, and a React frontend for an intuitive user experience.",
+    "A complete physiotherapy clinic management system with a .NET 8 backend and React 19 frontend. It centralizes patients, appointments, therapists, treatment plans, payments, clinical documents, resources, and reporting.<br/><br/>The backend follows Clean Architecture with Domain/Application/Infrastructure/API separation, JWT authentication, roles, SignalR real-time updates, and Cloudinary document storage.",
+  source: "https://github.com/Keiner-2006/physiocare-clinic",
   components: [
     {
       type: "media",
-      props: {
-        type: "image",
-        src: fisiotrack1,
-        alt: "FisioTrack Clinic Dashboard",
-        caption: "Clinic Dashboard",
-      },
+      props: { type: "image", src: fisiotrack1, alt: "PhysioCare dashboard", caption: "Clinic Dashboard" },
     },
     {
       type: "text",
       props: {
         title: "Architecture & Design",
-        text: "Multi-tenant architecture with database-per-tenant isolation strategy. The API layer follows RESTful conventions with versioning, HATEOAS links, and comprehensive Swagger/OpenAPI documentation for seamless client integration.",
+        text: "The backend is split into Domain, Application, Infrastructure, and API layers, applying dependency inversion, repositories, use cases, DTOs, and dependency injection. The frontend uses React Router, Context API, reusable hooks, and a dedicated service layer.",
       },
     },
     {
@@ -31,29 +27,26 @@ export default {
       props: {
         title: "Key Features",
         items: [
-          "Multi-tenant SaaS architecture with tenant isolation",
-          "Oracle database performance optimization (query tuning, indexing)",
-          "RESTful API with full Swagger/OpenAPI documentation",
-          "React frontend with real-time updates",
-          "Role-based access for administrators, clinicians, and patients",
-          "Automated billing and appointment scheduling",
+          "Patient and clinical history management",
+          "Scheduling with therapist and resource availability",
+          "Treatment plans and session tracking",
+          "Payments, billing, and executive dashboard",
+          "JWT authentication and role-based access",
+          "Real-time notifications with SignalR",
+          "Clinical document storage with Cloudinary",
+          "Backend and frontend automated tests",
         ],
       },
     },
     {
       type: "media",
-      props: {
-        type: "image",
-        src: fisiotrack2,
-        alt: "Patient Records View",
-        caption: "Patient Records",
-      },
+      props: { type: "image", src: fisiotrack2, alt: "PhysioCare patient management", caption: "Patient Management" },
     },
     {
       type: "text",
       props: {
         title: "Technical Stack",
-        text: "ASP.NET Core, C#, Oracle Database, React, RESTful API, Swagger, Entity Framework Core, JWT Authentication.",
+        text: ".NET 8, ASP.NET Core, Entity Framework Core, PostgreSQL, React 19, Vite, Tailwind CSS, JWT, SignalR, Cloudinary, xUnit, and Vitest.",
       },
     },
   ],
